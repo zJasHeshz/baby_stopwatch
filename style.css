@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akatab:wght@400;500;600;700&family=Poppins:wght@100;200;300&display=swap');
+
+:root {
+    --primery-color: #19d6fc;
+    --secondry-color: #fff;
+    --mainFont: 'Poppins', sans-serif;
+    --secondFont: 'Akatab', sans-serif;
+}
+
+::selection {
+    color: var(--primery-color);
+    background: var(--secondry-color);
+}
+
+body {
+    background-color: var(--primery-color);
+}
+
+.text {
+    color: var(--secondry-color);
+}
+
+#title {
+    font-family: var(--mainFont);
+    font-weight: 200;
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#mottoText {
+    font-family: var(--mainFont);
+    font-weight: 300;
+    text-align: center;
+}
+
+.time {
+    margin: 10px;
+    font-size: 15vw;
+    display: inline-block;
+    font-family: var(--secondFont);
+    font-weight: 400;
+    font-weight: bold;
+}
+
+#timeDisplay {
+    text-align: center;
+}
+
+.btn-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn {
+    background-color: var(--primery-color);
+    width: 100px;
+    height: auto;
+    padding: 10px 5px;
+    text-align: center;
+    border: 2px solid var(--secondry-color);
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 5px 10px;
+
+}
+
+.btn:hover {
+    background-color: var(--secondry-color);
+    color: var(--primery-color);
+    transition-duration: 0.3s;
+
+}
