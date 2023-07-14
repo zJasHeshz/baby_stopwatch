@@ -9,17 +9,33 @@
 
 }
 
-::selection {
-    color: var(--gradient);
-    animation: var(--animation);
 
+#body {
+    background: var(--gradient);
+    transition-duration: 0.3s;
+    height: 100vh;
+}
+
+.darkmode-section {
+    display: flex;
+    justify-content: right;
+    height: 50px;
+}
+
+
+
+#darkmode-img {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-color: transparent;
+    transition-duration: 0.3s;
 
 }
 
-body {
-    background: var(--gradient);
-    width: 100%;
-    height: 100vh;
+
+#darkmode-img:hover {
+    rotate: -20deg;
 }
 
 .text {
@@ -72,10 +88,11 @@ body {
     font-family: var(--mainFont);
     font-weight: bold;
     font-size: 120%;
+    transition-duration: 0.3s;
 
 }
 
 .btn:hover {
     font-size: 100%;
-    transition-duration: 0.3s;
+
 }

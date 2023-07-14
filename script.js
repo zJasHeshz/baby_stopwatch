@@ -6,7 +6,7 @@ const minutes = document.getElementById("minutes");
 const btnStart = document.getElementById("btnStart");
 const btnStop = document.getElementById("btnStop");
 const btnReset = document.getElementById("btnReset");
-
+const darkmode = document.getElementById("darkMode")
 
 // make variable for store hundredth of a second, second and minutes 
 let countHundredthOfASecond = 0;
@@ -72,3 +72,18 @@ function display() {
         }
     }
 }
+
+
+// dark mode toggle
+let clickTime = 0;
+darkmode.addEventListener("click", function () {
+    clickTime++;
+    document.getElementById("body").style.cssText = "background: #2b2b2b;"
+    document.getElementById("darkmode-img").src = "/img/light.png"
+    if (clickTime == 2) {
+        document.getElementById("body").style.cssText = "background:var(--gradient)"
+        document.getElementById("darkmode-img").src = "/img/dark.png"
+        clickTime = 0;
+    }
+})
+
