@@ -5,6 +5,10 @@ My first javascript project.
 # StopWatch
 
 Here is a simple stopwatch. Only vanilla HTML, CSS and JavaScript are used for this.
+# Demo 
+
+https://zjasheshz.github.io/baby_stopwatch/
+
 
 # Light Mode
 
