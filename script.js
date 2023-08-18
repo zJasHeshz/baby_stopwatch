@@ -74,11 +74,11 @@ let clickTime = 0;
 darkmode.addEventListener("click", function () {
   clickTime++;
   document.getElementById("body").style.cssText = "background: #2b2b2b;";
-  document.getElementById("darkmode-img").src = "/img/light.png";
+  document.getElementById("darkmode-img").src = "https://raw.githubusercontent.com/zJasHeshz/baby_stopwatch/main/img/light.png";
   if (clickTime == 2) {
     document.getElementById("body").style.cssText =
       "background:var(--gradient)";
-    document.getElementById("darkmode-img").src = "/img/dark.png";
+    document.getElementById("darkmode-img").src = "https://raw.githubusercontent.com/zJasHeshz/baby_stopwatch/main/img/dark.png";
     clickTime = 0;
   }
 });
